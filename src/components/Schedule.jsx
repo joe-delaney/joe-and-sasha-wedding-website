@@ -12,8 +12,9 @@ const Schedule = () => {
                     </div>
                     <div className="flex-col flex-center">
                         <h4 className="text-xl font-anton">Where:</h4>
-                        <h4>National Museum of Women in the Arts</h4>
+                        <h4 className="font-bold text-lg">National Museum of Women in the Arts</h4>
                         <h4>1250 New York Ave NW, Washington DC, DC 20005</h4>
+                        <h4>5 PM - 12 AM</h4>
                     </div>
                 </div>
             </div>
@@ -27,6 +28,15 @@ const Schedule = () => {
                     <span><b>8:30 PM</b>: Special Performances & Dances</span>
                     <span><b>9:30 PM - Midnight</b>: Let's Dance!</span>
                 </div>
+            </div>
+            <div className="flex-col flex-center gap-6 bg-light-blue-100 text-light-blue-500 rounded-3xl p-4">
+                <h1 className="text-4xl font-anton squiggly-underline">After Party</h1>
+                <div>
+                    <h4 className="font-bold text-lg">Johnny Pistolas</h4>
+                    <h4>2333 18th St NW, Washington, DC 20009</h4>
+                    <h4>12 AM - 2 AM</h4>
+                </div>
+                <span>**yes...you are expected to rally**</span>
             </div>
         </div>
     )
