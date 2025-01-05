@@ -5,9 +5,8 @@ import Home from './components/Home';
 import Schedule from './components/Schedule'
 import FAQs from './components/FAQs'
 import Travel from './components/Travel'
+import OurStory from './components/OurStory'
 
-const OurStory = () => <div className="container mx-auto p-4">Our story goes here.</div>;
-const ThingsToDo = () => <div className="container mx-auto p-4">Things to do in the area.</div>;
 const Registry = () => <div className="container mx-auto p-4">Registry information here.</div>;
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/travel" element={<Travel />} />
-          <Route path="/things-to-do" element={<ThingsToDo />} />
           <Route path="/registry" element={<Registry />} />
         </Routes>
       </main>

@@ -65,14 +65,6 @@ const Header = () => {
               Travel
             </NavLink>
             <NavLink 
-              to="/things-to-do" 
-              className={({ isActive }) => 
-                `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
-              }
-            >
-              Things to Do
-            </NavLink>
-            <NavLink 
               to="/registry" 
               className={({ isActive }) => 
                 `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
@@ -145,15 +137,6 @@ const Header = () => {
             onClick={closeMenu} // Close the menu when clicked
           >
             Travel
-          </NavLink>
-          <NavLink 
-            to="/things-to-do" 
-            className={({ isActive }) => 
-              `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
-            }
-            onClick={closeMenu} // Close the menu when clicked
-          >
-            Things to Do
           </NavLink>
           <NavLink 
             to="/registry" 
