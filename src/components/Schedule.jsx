@@ -2,24 +2,24 @@ import React from 'react';
 
 const Schedule = () => {
     return (
-        <div className="container mx-auto bg-light-blue-500 rounded-2xl p-10 flex flex-col justify-items-center items-center gap-10 text-white">
-            <div className="flex-col flex justify-items-center items-center gap-6">
+        <div className="container mx-auto bg-light-blue-500 rounded-2xl p-10 flex flex-col justify-items-center items-center gap-10 text-white text-center">
+            <div className="flex-col flex-center gap-6">
                 <h1 className="text-4xl font-anton squiggly-underline">Wedding Details</h1>
-                <div className="flex-col flex justify-items-center items-center gap-6">
-                    <div className="flex-col flex justify-items-center items-center">
+                <div className="flex-col flex-center gap-6">
+                    <div className="flex-col flex-center">
                         <h4 className="text-xl font-anton">When:</h4>
                         <h4>Friday, July 25th, 2025</h4>
                     </div>
-                    <div className="flex-col flex justify-items-center items-center">
+                    <div className="flex-col flex-center">
                         <h4 className="text-xl font-anton">Where:</h4>
                         <h4>National Museum of Women in the Arts</h4>
                         <h4>1250 New York Ave NW, Washington DC, DC 20005</h4>
                     </div>
                 </div>
             </div>
-            <div className="flex-col flex justify-items-center items-center gap-6">
+            <div className="flex-col flex-center gap-6">
                 <h1 className="text-4xl font-anton squiggly-underline">Day of Schedule</h1>
-                <div className="flex-col flex justify-items-center items-center gap-4">
+                <div className="flex-col flex-center gap-4">
                     <span><b>5:00 PM - 5:30 PM</b>: Arrival at Museum</span>
                     <span><b>5:30 PM</b>: Wedding Ceremony</span>
                     <span><b>6:15 PM</b>: Cocktail Hour</span>

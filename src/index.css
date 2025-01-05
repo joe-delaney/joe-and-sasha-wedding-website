@@ -18,3 +18,9 @@ html, body {
   text-decoration-thickness: 4px;
   text-underline-position: under;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
