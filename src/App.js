@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Schedule from './components/Schedule'
+import FAQs from './components/FAQs'
 
 const OurStory = () => <div className="container mx-auto p-4">Our story goes here.</div>;
-const FAQs = () => <div className="container mx-auto p-4">FAQs content.</div>;
 const Travel = () => <div className="container mx-auto p-4">Travel information here.</div>;
 const ThingsToDo = () => <div className="container mx-auto p-4">Things to do in the area.</div>;
 const Registry = () => <div className="container mx-auto p-4">Registry information here.</div>;
