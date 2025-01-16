@@ -11,9 +11,9 @@ const Home = () => {
                 <h2 className="text-4xl font-semibold text-light-blue-500">Friday, July 25th, 2025 | Washington, D.C.</h2>
             </div>
             <div className="flex justify-between gap-4 max-w-screen">
-                <img src={img3} className="w-1/3 object-cover rounded-xl max-h-200"/>
-                <img src={img2} className="w-1/3 object-cover rounded-xl"/>
-                <img src={img1} className="w-1/3 object-cover rounded-xl"/>
+                <img src={img3} alt="sasha and joe in hawaii" className="w-1/3 object-cover rounded-xl max-h-200"/>
+                <img src={img2} alt="sasha and joe in art gallery" className="w-1/3 object-cover rounded-xl"/>
+                <img src={img1} alt="sasha and joe on a rooftop" className="w-1/3 object-cover rounded-xl"/>
             </div>
         </div>
     )
