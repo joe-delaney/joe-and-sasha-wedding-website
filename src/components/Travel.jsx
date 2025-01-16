@@ -55,7 +55,7 @@ const Travel = () => {
                     <h4>{option.address}</h4>
                     {option.phone ? <h4>{option.phone}</h4> : ""}
                     <span>{option.description}</span>
-                    {option.website ? <a href={option.website} target="_blank" className="flex-center border w-32 h-8 rounded-lg bg-light-blue-500 text-white">Website</a> : ""}
+                    {option.website ? <a href={option.website} target="_blank" rel="noreferrer" className="flex-center border w-32 h-8 rounded-lg bg-light-blue-500 text-white">Website</a> : ""}
                 </div>
             )))}
             </div>
