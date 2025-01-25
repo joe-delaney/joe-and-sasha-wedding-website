@@ -6,6 +6,7 @@ import Schedule from './components/Schedule'
 import FAQs from './components/FAQs'
 import Travel from './components/Travel'
 import OurStory from './components/OurStory'
+import RSVP from './components/RSVP'
 
 const Registry = () => <div className="container mx-auto p-4">Registry information here.</div>;
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/travel" element={<Travel />} />
           <Route path="/registry" element={<Registry />} />
+          <Route path="/rsvp" element={<RSVP />} />
         </Routes>
       </main>
     </Router>

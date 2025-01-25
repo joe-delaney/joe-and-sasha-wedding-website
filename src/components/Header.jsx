@@ -72,6 +72,14 @@ const Header = () => {
             >
               Registry
             </NavLink>
+            <NavLink 
+              to="/rsvp" 
+              className={({ isActive }) => 
+                `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
+              }
+            >
+              RSVP
+            </NavLink>
           </div>
         </div>
 
@@ -146,6 +154,15 @@ const Header = () => {
             onClick={closeMenu} // Close the menu when clicked
           >
             Registry
+          </NavLink>
+          <NavLink 
+            to="/rsvp" 
+            className={({ isActive }) => 
+              `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
+            }
+            onClick={closeMenu} // Close the menu when clicked
+          >
+            RSVP
           </NavLink>
         </div>
       </div>
