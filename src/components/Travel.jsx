@@ -49,8 +49,8 @@ const Travel = () => {
     return (
         <div className="container mx-auto flex-center flex-col">
             <div className="flex flex-col gap-8">
-            {travelOptions.map((option => (
-                <div className="flex-center flex-col max-w-xl gap-2 text-center">
+            {travelOptions.map(((option, idx) => (
+                <div className="flex-center flex-col max-w-xl gap-2 text-center" key={idx}>
                     <h4 className="font-anton text-2xl text-light-blue-500">{option.name.toUpperCase()}</h4>
                     <h4>{option.address}</h4>
                     {option.phone ? <h4>{option.phone}</h4> : ""}

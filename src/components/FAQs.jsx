@@ -56,8 +56,8 @@ const FAQs = () => {
     return (
         <div className="container mx-auto flex-center flex-col">
             <div className="flex flex-col gap-6">
-            {faqs.map((faq => (
-                <div className="flex flex-col max-w-xl gap-2">
+            {faqs.map(((faq, idx) => (
+                <div className="flex flex-col max-w-xl gap-2" key={idx}>
                     <h4 className="text-2xl font-semibold text-light-blue-500">{faq.question}</h4>
                     <h4 className="text-light-blue-900">{faq.answer}</h4>
                 </div>

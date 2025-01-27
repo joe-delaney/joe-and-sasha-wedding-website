@@ -1,18 +1,53 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/tofu-blue-logo.png';
-import { MenuIcon, XIcon } from '@heroicons/react/outline'; // Import Heroicons
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [count, setCount] = useState(0);
+
+  const removeRSVPForm = () => {
+    const form = document.getElementById("widget-oursvp")
+    if(form) form.classList.add("hidden")
+  }
+
+  const addRSVPForm = () => {
+    const form = document.getElementById("widget-oursvp")
+    if(form) form.classList.remove("hidden")
+  }
 
   const toggleMenu = () => {
+    if(!isMenuOpen) {
+      removeRSVPForm()
+    }
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false); // Close the menu when a link is clicked
+  const closeMenu = (flag) => {
+    setIsMenuOpen(false);
+    if(flag === "RSVP") {
+      addRSVPForm()
+    }
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    let intervalId;
+
+    if (count < 25) {
+      intervalId = setInterval(() => {
+        setCount((prevCount) => prevCount + 1);
+        if (location.pathname !== '/rsvp') {
+          removeRSVPForm()
+        }
+      }, 25);
+    }
+
+    return () => clearInterval(intervalId);
+  }, [location, count]);
 
   return (
     <header className="bg-light-blue-100">
@@ -29,6 +64,7 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
               }
+              onClick={removeRSVPForm}
             >
               Home
             </NavLink>
@@ -37,6 +73,7 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
               }
+              onClick={removeRSVPForm}
             >
               Schedule
             </NavLink>
@@ -45,6 +82,7 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
               }
+              onClick={removeRSVPForm}
             >
               Our Story
             </NavLink>
@@ -53,6 +91,7 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
               }
+              onClick={removeRSVPForm}
             >
               FAQs
             </NavLink>
@@ -61,6 +100,7 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
               }
+              onClick={removeRSVPForm}
             >
               Travel
             </NavLink>
@@ -69,6 +109,7 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
               }
+              onClick={removeRSVPForm}
             >
               Registry
             </NavLink>
@@ -77,6 +118,7 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
               }
+              onClick={addRSVPForm}
             >
               RSVP
             </NavLink>
@@ -106,7 +148,7 @@ const Header = () => {
             className={({ isActive }) => 
               `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
             }
-            onClick={closeMenu} // Close the menu when clicked
+            onClick={() => closeMenu("")}
           >
             Home
           </NavLink>
@@ -115,7 +157,7 @@ const Header = () => {
             className={({ isActive }) => 
               `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
             }
-            onClick={closeMenu} // Close the menu when clicked
+            onClick={() => closeMenu("")}
           >
             Schedule
           </NavLink>
@@ -124,7 +166,7 @@ const Header = () => {
             className={({ isActive }) => 
               `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
             }
-            onClick={closeMenu} // Close the menu when clicked
+            onClick={() => closeMenu("")}
           >
             Our Story
           </NavLink>
@@ -133,7 +175,7 @@ const Header = () => {
             className={({ isActive }) => 
               `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
             }
-            onClick={closeMenu} // Close the menu when clicked
+            onClick={() => closeMenu("")}
           >
             FAQs
           </NavLink>
@@ -142,7 +184,7 @@ const Header = () => {
             className={({ isActive }) => 
               `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
             }
-            onClick={closeMenu} // Close the menu when clicked
+            onClick={() => closeMenu("")}
           >
             Travel
           </NavLink>
@@ -151,7 +193,7 @@ const Header = () => {
             className={({ isActive }) => 
               `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
             }
-            onClick={closeMenu} // Close the menu when clicked
+            onClick={() => closeMenu("")}
           >
             Registry
           </NavLink>
@@ -160,7 +202,7 @@ const Header = () => {
             className={({ isActive }) => 
               `text-light-blue-500 font-semibold text-2xl ${isActive ? 'underline' : ''}`
             }
-            onClick={closeMenu} // Close the menu when clicked
+            onClick={() => closeMenu("RSVP")}
           >
             RSVP
           </NavLink>
