@@ -1,19 +1,22 @@
 import React from 'react';
 import img1 from '../assets/sasha1.jpg';
-import img2 from '../assets/sasha2.jpg';
-import img3 from '../assets/sasha3.jpg';
+import WavyMarquette from './WavyMarquette'
 
 const Home = () => {
     return (
-        <div className="container mx-auto p-6">
-            <div className="mb-10 flex flex-col gap-4">
-                <h1 className="text-6xl font-anton text-light-blue-500">Sasha and Joe are Getting Married!</h1>
-                <h2 className="text-4xl font-semibold text-light-blue-500">Friday, July 25th, 2025 | Washington, D.C.</h2>
-            </div>
-            <div className="flex justify-between gap-4 max-w-screen">
-                <img src={img3} alt="sasha and joe in hawaii" className="w-1/3 object-cover rounded-xl max-h-200"/>
-                <img src={img2} alt="sasha and joe in art gallery" className="w-1/3 object-cover rounded-xl"/>
-                <img src={img1} alt="sasha and joe on a rooftop" className="w-1/3 object-cover rounded-xl"/>
+        <div className="homepage">
+            <WavyMarquette text="WE ARE GETTING MARRIED!!"></WavyMarquette>
+            <div className="container mx-auto p-6 home">
+                <div className="flex homepage-container">
+                    <img src={img1} alt="sasha and joe on a rooftop" className="rounded-xl w-1/2 homepage-img"/>
+                    <div className="w-1/2 flex flex-col homepage-right">
+                        <div className="flex flex-col homepage-right-text">
+                            <h2 className="text-4xl font-semibold text-light-blue-100">July 25th, 2025</h2>
+                            <h2 className="text-4xl font-semibold text-light-blue-100">Washington, D.C.</h2>
+                        </div>
+                        <button className="homepage-btn text-2xl font-semibold text-light-blue-100 flex">Click to RSVP</button>
+                    </div>
+                </div>
             </div>
         </div>
     )

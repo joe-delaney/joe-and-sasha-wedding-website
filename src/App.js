@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main className="bg-light-blue-100">
+      <main className="bg-light-blue-500">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
