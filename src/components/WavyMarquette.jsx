@@ -5,7 +5,7 @@ const WavyMarquette = ( { text, numItems = 5 } ) => {
 
     for (let i = 0; i < numItems; i++) {
         itemList.push(
-            <text className="animated-text"  dominant-baseline="middle" fill="white">
+            <text className="animated-text font-anton"  dominant-baseline="middle" fill="white">
             <textPath
               startOffset="100%"
               href="#p1"
@@ -13,7 +13,7 @@ const WavyMarquette = ( { text, numItems = 5 } ) => {
             >
               { text }
               <animate attributeName="startOffset" from="100%" to="-100%"
-                    dur="10s" begin={`${i * 2.5}s`} repeatCount="indefinite" />
+                    dur="10s" begin={`${i * 2}s`} repeatCount="indefinite" />
             </textPath>
           </text>
         );
@@ -30,7 +30,7 @@ const WavyMarquette = ( { text, numItems = 5 } ) => {
             />
             </symbol>
     
-            <use href="#s1" class="path" />
+            <use href="#s1" className="path" />
 
             { itemList }
         </svg>

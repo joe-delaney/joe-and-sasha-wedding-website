@@ -1,4 +1,5 @@
 import React from 'react';
+import WeddingAccordion from './Accordion'
 
 const FAQs = () => {
 
@@ -55,12 +56,10 @@ const FAQs = () => {
 
     return (
         <div className="container mx-auto flex-center flex-col">
-            <div className="flex flex-col gap-6">
+            <h4 className="faq-header text-4xl font-anton text-light-blue-100">We knew you were gonna ask that...</h4>
+            <div className="flex flex-col faqs-container">
             {faqs.map(((faq, idx) => (
-                <div className="flex flex-col max-w-xl gap-2" key={idx}>
-                    <h4 className="text-2xl font-semibold text-light-blue-500">{faq.question}</h4>
-                    <h4 className="text-light-blue-900">{faq.answer}</h4>
-                </div>
+                <WeddingAccordion title={faq.question} description={faq.answer} key={`faq-${idx}`}></WeddingAccordion>
             )))}
             </div>
         </div>

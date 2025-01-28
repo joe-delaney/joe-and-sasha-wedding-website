@@ -13,22 +13,17 @@ html, body {
   top: 20%;
   left: 25%;
 
-  .rsvp-survey .survey {
+  --bg-color: #E8FAFF;
 
-  }
 
   .rsvp-form {
-    background-color: #2db7d2;
     border-radius: 10px;
 
-    --button-bg-color: #E8FAFF;
-    --text-color: white;
-    --heading-color: white;
-    --border-color: #2db7d2;
+    --button-bg-color: #2db7d2;
+    --text-color: #2db7d2;
+    --heading-color: #2db7d2;
+    --border-color: #E8FAFF;
     --accent-color:  #2db7d2;
-    
-    .rsvp-font {
-    }
 
     .rsvp-btn {
       border-radius: 10px;
@@ -151,9 +146,45 @@ path {
   }
 }
 
-
 .marquette {
   position: absolute;
   top: -50px;
+}
+
+.faqs-container {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.faq-header {
+  margin-bottom: 30px;
+  text-align: center
+}
+
+.accordion {
+  border-top: 1px solid #E8FAFF;
+  border-bottom: 1px solid #E8FAFF;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.accordion-icon {
+  margin-left: 10px;
 }
 
