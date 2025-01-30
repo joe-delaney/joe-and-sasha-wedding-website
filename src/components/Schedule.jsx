@@ -2,7 +2,7 @@ import React from 'react';
 
 const Schedule = () => {
     return (
-        <div className="schedule container mx-auto bg-light-blue-100 rounded-2xl p-10 text-light-blue-500 text-center flex">
+        <div className="schedule container mx-auto bg-light-blue-100 p-10 text-light-blue-500 text-center flex">
             <div className="flex flex-col justify-items-center items-center gap-10">
                 <div className="flex-col flex-center gap-10">
                     <h1 className="text-4xl font-anton squiggly-underline">Wedding Details</h1>

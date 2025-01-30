@@ -1,37 +1,61 @@
 import React from 'react';
-import img1 from '../assets/our-story-1.jpg';
-import img2 from '../assets/our-story-2.jpg';
-import img3 from '../assets/our-story-3.jpg';
+import FlipCard from './FlipCard'
 
 const OurStory = () => {
 
+    const funFacts = [
+        {
+            front: "Do you know Tofu and Blue's original names?",
+            back: "Tofu was named heukimja (meaning black sesame seed in Korean), but he was called Imja for short. When we adopted Blue, his name was Ron (and he had a brother named Harry).",
+        },
+        {
+            front: "Sasha and Joe played Super Smash Bros on their first date. Who were their characters?",
+            back: "Sasha played with Snake and Joe played with the Ice Climbers. Joe may or may not have won every game...",
+        },
+        {
+            front: "What is Sasha's favorite item from Trader Joe's?",
+            back: "Vegan Tikka Masala (at least four are purchased each time we go)",
+        },
+        {
+            front: "What would Joe and Sasha order at the Cheesecake Factory?",
+            back: "Avocado Egg Rolls, Korean Fried Cauliflower, and the Four Cheese Pasta",
+        },
+        {
+            front: "What are Joe and Sasha's middle names?",
+            back: "Joe's middle name is Anthony and Sasha's middle name is Sasha (and her first name is Nikki).",
+        },
+        {
+            front: "Who do people say are Joe and Sasha's celebrity dopplegangers",
+            back: "Zendaya and Tom Holland",
+        },
+    ]
+
     return (
-        <div className="container mx-auto flex flex-col gap-10 justify-items-center">
-            <div className="flex justify-items-between gap-10 items-center">
-                <div className="flex flex-col gap-2">
-                    <p>It all started on Halloween 2019 at a party on O Street right outside Georgetown. Sasha, dressed as an angel, met Joe, dressed as Tony Stark (minus the goatee). After a night of great conversation and a little help from Sasha’s friend Seray, they exchanged numbers—because what better way to start a love story than with a little Halloween magic?</p>
-                    <p>We didn’t talk much after that, just some sporadic texting and the occasional Snapchat. But when Sasha posted a story about playing Super Smash Bros., Joe couldn’t resist. He challenged her to a match, and thus began our first official date. We grabbed margaritas at El Centro, then went head-to-head in Smash Bros. Sasha was Snake; Joe was the Ice Climbers. Spoiler: Joe won every match (but she’s still convinced it was a fluke).</p>
-                    <p>Over the next few months, we went on more dates, including Sasha being Joe’s date to ZY Formal and Joe visiting UMD for a night out at Turf. Then in March 2020, COVID hit. Sasha went home to Maryland, and Joe stayed on campus, but we weren’t about to let distance stop us. Facetime, puzzles, text games—we did everything we could to stay close. And then, on March 29, 2020, Joe officially asked Sasha to be his girlfriend.</p>
-                </div>
-                <img src={img3} alt="sasha and joe on a rooftop" className="w-1/2 object-cover rounded-xl img-h"/>
-            </div>
-            <div className="flex justify-items-between gap-10 items-center">
-                <img src={img2} alt="tofu and blue on the couch" className="w-1/2 object-cover rounded-xl img-h"/>
-                <div className="flex flex-col gap-2">
-                    <p>Through the pandemic, we learned to navigate long-distance love, and in June 2020, Joe made the trip to Maryland to meet Sasha’s family. The pandemic had forced Sasha to invite him so early in the relationship, but even though they’d only seen each other virtually for months, things quickly clicked, and it felt like they had never been apart.</p>
-                    <p>By March 2021, we were both in New York City. And in true city fashion, we found apartments across the street from each other on Park Avenue. After spending over a year in long-distance, we were finally able to explore the city together. We tried new restaurants, went to fun bars, and explored together on countless evening walks. There was so much to do, and it felt like the city was ours to discover.</p>
-                    <p>In March 2023, we made the leap to move in together in a cozy one-bedroom apartment in Gramercy Park. It quickly became our first real home, filled with love and laughter. Then, in July 2023, we adopted our first dog, Tofu. After some paperwork and a few too many questions about the fact that he was in Korea, we decided we couldn’t live without him. He brought so much joy into our lives, and we couldn't imagine our days without him.</p>
+        <div className="container mx-auto flex flex-col gap-20">
+            <div className="our-story flex flex-col gap-8 justify-items-center bg-light-blue-100">
+                <h4 className="text-3xl font-anton text-light-blue-500">And that Tofu and Blue, is how I met your mother...</h4>
+                <div className="text-l text-light-blue-500 flex flex-col gap-3">
+                    <p>It all began on a chilly Halloween night in 2019 at a party on O Street just outside Georgetown. The floor was sticky, the fridge was stocked with Natty Lites, and the air buzzed with that unmistakable energy of Halloweekend.</p>
+                    <p>Joe almost skipped the party but threw on a last-minute Tony Stark costume and showed up. Meanwhile, Sasha made the 45-minute trek from UMD, excited for a night out and a date she had planned later at a bar—completely unaware of the persistent Iron Man impersonator about to enter her life.</p>
+                    <p>At the party, Joe spotted a group of girls struggling to take a selfie. One of them immediately caught his eye, so he offered to take the photo. Later, he learned she was his friend Seray’s best friend from middle school. When he casually mentioned his interest, Seray asked, “Which one?” He replied, “The tall one.” She grinned. “I’ll see what I can do.” </p>
+                    <p>Sasha, meanwhile, wasn’t exactly swooning over Tony Stark, but she noticed Joe kept finding ways to talk to her. As the group moved to a bar, they spent more time together, laughing and sharing stories. But then, her date arrived. She told Joe she’d be right back. Within minutes of sitting down with her date, she realized she’d much rather be with Joe.  </p>
+                    <p>When Joe saw Sasha with another guy, panic set in. He rushed to Seray, convinced he had blown his shot. Just as he was spiraling, Sasha returned, asking for help ditching her date. (Joe may or may not remember the guy as “a total loser”, but that’s up for debate.) A quick escape plan was executed, and Joe’s hopes were restored. </p>
+                    <p>From that moment on, Sasha saw Joe differently -- her sweet and now quite cute savior. They spent the rest of the night talking, dancing, and laughing about the chaos of the day.</p>
+                    <p>By the end of the night, they shared a slice of pizza, exchanged numbers, and said goodnight... for now. While it’d be easy to say the rest is history, every great rom-com needs a little drama—but that’s a story for another time.  </p>
+                    <p>Who would’ve thought that one Halloween night would lead to five years of love, two dogs, their first apartment in NYC, and a lifetime of memories?</p>
+                    <p>And if there’s one thing to take away from this story—it’s a huge thank you to Seray.  </p>
                 </div>
             </div>
-            <div className="flex justify-items-between gap-10 items-center">
-                <div className="flex flex-col gap-2">
-                    <p>But we weren’t done. A few months later, in July 2024, we saw another adoption post for a dog named Blue. The adoption event was just a five-minute walk from our apartment, so we thought, "Why not go check him out?" Within minutes of meeting him, we knew he was meant to be ours. We brought Blue home the same day, and just like that, our family grew.</p>
-                    <p>Then came the big moment. On July 25, 2024, Joe proposed. He spent the day setting up the apartment with flowers, candles, and most important of all, tuxedos for the dogs. Sasha had no idea it was happening. When she walked in, she was completely shocked, and of course, she said yes. We celebrated with our families at Kimberly Rooftop, celebrating our engagement in the very same spot we celebrated our one year dating anniversary.</p>
-                    <p>In between all these milestones, we’ve traveled the world—Hawaii, Japan, Italy, and more local trips to Bar Harbor, Upstate New York, and Woodloch in the Poconos, where Sasha lovingly refers to it as "White People Camp." Every adventure has been a testament to our love, and we can’t wait for the many more to come. July 25th, 2025 is only the beginning!</p>
+            <div className="flip-cards-container flex flex-col gap-12">
+                <h4 className="text-5xl font-anton text-light-blue-100">Fun Facts</h4>
+                <div className="flip-cards flex">
+                    {
+                        funFacts.map(({front, back}) => {
+                            return <FlipCard frontText={front} backText={back}></FlipCard>
+                        })
+                    }
                 </div>
-                <img src={img1} alt="joe asking sasha to marry him" className="w-1/2 object-cover rounded-xl img-h"/>
             </div>
-            <h4 className="text-3xl font-anton text-light-blue-500">And that Tofu and Blue, is how I met your mother</h4>
         </div>
     )
 }
