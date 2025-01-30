@@ -5,15 +5,14 @@ const WavyMarquette = ( { text, numItems = 5 } ) => {
 
     for (let i = 0; i < numItems; i++) {
         itemList.push(
-            <text className="animated-text font-anton"  dominant-baseline="middle" fill="white">
+            <text className="animated-text font-anton text-5xl"  dominant-baseline="middle" fill="white">
             <textPath
               startOffset="100%"
               href="#p1"
-              className="text-4xl"
             >
               { text }
               <animate attributeName="startOffset" from="100%" to="-100%"
-                    dur="10s" begin={`${i * 2}s`} repeatCount="indefinite" />
+                    dur="10s" begin={`${i * 2.5}s`} repeatCount="indefinite" />
             </textPath>
           </text>
         );

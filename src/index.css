@@ -100,6 +100,7 @@ path {
   fill: none;
 }
 
+
 .animated-text textPath {
   animation: moveText 10s infinite linear;
 }
@@ -119,10 +120,72 @@ path {
 
 .homepage {
   position: relative;
+  /* padding: 0px 70px; */
+}
+
+.homepage-gif {
+  width: 25%;
+  border-radius: 4px;
+}
+
+.homepage-section-1 {
+  padding: 0px 70px;
+  padding-bottom: 10px;
+}
+
+.rounded-bottom-container {
+  height: 80px;
+  width: 100%;
+  background-color: #E8FAFF;
+  border: none;
+}
+
+.rounded-bottom {
+  height: 80px;
+  width: 100%;
+  background-color: #2db7d2;
+  border: none;
+  clip-path: circle(3000px at 50% calc(100% - 3000px));
+}
+
+.homepage-section-2 {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #E8FAFF;
+  gap: 20px;
+}
+
+.gif-text-header {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.gif-text-subheader {
+  text-align: center;
 }
 
 @media (max-width: 767px) {
-  .homepage-container {
+  .gif-text-subheader {
+    font-size: 18px;
+  }
+}
+
+.homepage-section-3 {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .homepage-section-1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
