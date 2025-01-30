@@ -1,14 +1,9 @@
 import React from 'react';
-import img1 from '../assets/sasha1.jpg';
 
 const Schedule = () => {
     return (
         <div className="schedule container mx-auto bg-light-blue-100 rounded-2xl p-10 text-light-blue-500 text-center flex">
-            <div className="schedule-img-container flex flex-col w-1/4">
-                <img src={img1} className="schedule-img" alt="sasha and joe image"></img>
-                <img src={img1} className="schedule-img" alt="sasha and joe image"></img>
-            </div>
-            <div className="main-schedule flex flex-col justify-items-center items-center gap-10 w-1/2">
+            <div className="flex flex-col justify-items-center items-center gap-10">
                 <div className="flex-col flex-center gap-10">
                     <h1 className="text-4xl font-anton squiggly-underline">Wedding Details</h1>
                     <div className="flex-col flex-center gap-6">
@@ -46,10 +41,6 @@ const Schedule = () => {
                         <span>**yes...you are expected to rally**</span>
                     </div>
                 </div>
-            </div>
-            <div className="schedule-img-container flex flex-col w-1/4">
-                <img src={img1} className="schedule-img" alt="sasha and joe image"></img>
-                <img src={img1} className="schedule-img" alt="sasha and joe image"></img>
             </div>
         </div>
     )
