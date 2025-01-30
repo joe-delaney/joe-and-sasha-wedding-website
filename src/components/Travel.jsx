@@ -36,7 +36,7 @@ const Travel = () => {
                             <a href="https://www.hilton.com/en/hotels/dcawawa-waldorf-astoria-washington-dc/" target="_blank" rel="noreferrer" className="flex-center border w-32 h-8 rounded-lg bg-light-blue-500 text-white">Website</a>
                         </div>
                         <div className="flex flex-col gap-3 travel-item">
-                            <span className="font-anton text-xl">Washington Union Station</span>
+                            <span className="font-anton text-xl">Hyatt Regency Crystal City</span>
                             <p>This hotel is a cheaper option very close to the airport and still only about a 15 minute drive from the venue.</p>
                             <a href="https://www.hyatt.com/hyatt-regency/en-US/wasrc-hyatt-regency-crystal-city-at-reagan-national-airport" target="_blank" rel="noreferrer" className="flex-center border w-32 h-8 rounded-lg bg-light-blue-500 text-white">Website</a>
                         </div>
