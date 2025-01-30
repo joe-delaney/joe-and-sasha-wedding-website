@@ -16,6 +16,8 @@ html, body {
 }
 
 #widget-oursvp {
+  --dark-blue: #2db7d2;
+  --light-blue: #E8FAFF;
   position: absolute;
   top: 20%;
   left: 25%;
@@ -380,4 +382,17 @@ path {
   .flip-card-back {
     font-size: 12px;
   }
+}
+
+.registry {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 30px;
+  padding: 50px;
+}
+
+.registry-text {
+  justify-content: center;
+  align-items: center;
 }

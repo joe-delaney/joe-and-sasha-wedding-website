@@ -51,7 +51,7 @@ const OurStory = () => {
                 <div className="flip-cards flex">
                     {
                         funFacts.map(({front, back}) => {
-                            return <FlipCard frontText={front} backText={back}></FlipCard>
+                            return <FlipCard frontText={front} backText={back} key={front}></FlipCard>
                         })
                     }
                 </div>

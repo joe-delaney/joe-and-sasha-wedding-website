@@ -7,8 +7,7 @@ import FAQs from './components/FAQs'
 import Travel from './components/Travel'
 import OurStory from './components/OurStory'
 import RSVP from './components/RSVP'
-
-const Registry = () => <div className="container mx-auto p-4">Registry information here.</div>;
+import Registry from './components/Registry'
 
 function App() {
   return (
