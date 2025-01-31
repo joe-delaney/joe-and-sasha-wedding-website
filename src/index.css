@@ -128,7 +128,7 @@ path {
 
 .homepage-gif {
   width: 30%;
-  border-radius: 4px;
+  border-radius: 16px;
 }
 
 .homepage-section-1 {
@@ -171,12 +171,6 @@ path {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .gif-text-subheader {
-    font-size: 18px;
-  }
-}
-
 .homepage-section-3 {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -185,31 +179,6 @@ path {
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-
-@media (max-width: 767px) {
-  .homepage-section-1 {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .homepage-btn {
-    justify-content: center;
-    border-radius: 300px;
-    width: 250px;
-    border: 3px solid var(--light-blue);
-    padding: 20px;
-  }
-
-  .homepage-img { 
-    width: 100%;
-  }
-
-  .homepage-right {
-    width: 100%;
-  }
 }
 
 .marquette {
@@ -252,13 +221,6 @@ path {
   gap: 20px;
   padding: 20px;
   flex-wrap: wrap;
-}
-
-@media (max-width: 767px) {
-  .travel-items {
-    flex-direction: column;
-    gap: 10px;
-  }
 }
 
 .travel-item {
@@ -365,25 +327,6 @@ path {
   max-width: 100%;
 }
 
-@media (max-width: 767px) {
-  .flip-cards {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-
-  .flip-card {
-    flex-basis: 1 0 40%;
-  }
-
-  .flip-card-front {
-    font-size: 18px;
-  }
-
-  .flip-card-back {
-    font-size: 12px;
-  }
-}
-
 .registry {
   justify-content: center;
   align-items: center;
@@ -400,5 +343,58 @@ path {
 @media (max-width: 767px) {
   .homepage-gif {
     width: 60%;
+  }
+
+  .animated-text {
+    display: none;
+  }
+
+  .gif-text-subheader {
+    font-size: 18px;
+  }
+
+  .homepage-section-1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .homepage-btn {
+    justify-content: center;
+    border-radius: 300px;
+    width: 250px;
+    border: 3px solid var(--light-blue);
+    padding: 20px;
+  }
+
+  .homepage-img { 
+    width: 100%;
+  }
+
+  .homepage-right {
+    width: 100%;
+  }
+
+  .flip-cards {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .flip-card {
+    flex-basis: 1 0 40%;
+  }
+
+  .flip-card-front {
+    font-size: 18px;
+  }
+
+  .flip-card-back {
+    font-size: 12px;
+  }
+
+  .travel-items {
+    flex-direction: column;
+    gap: 10px;
   }
 }
