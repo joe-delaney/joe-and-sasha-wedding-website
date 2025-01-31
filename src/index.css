@@ -340,6 +340,18 @@ path {
   align-items: center;
 }
 
+.our-story-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.our-story-img {
+  max-width: 25%;
+  border-radius: 30px;
+}
+
 @media (max-width: 767px) {
   .homepage-gif {
     width: 60%;
@@ -396,5 +408,9 @@ path {
   .travel-items {
     flex-direction: column;
     gap: 10px;
+  }
+  
+  .our-story-img {
+    display: none;
   }
 }

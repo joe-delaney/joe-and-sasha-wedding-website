@@ -1,5 +1,8 @@
 import React from 'react';
 import FlipCard from './FlipCard'
+import familyImg from '../assets/family.jpg'
+import formalImg from '../assets/formal.jpeg'
+import italyImg from '../assets/italy.jpg'
 
 const OurStory = () => {
 
@@ -35,15 +38,18 @@ const OurStory = () => {
             <div className="our-story flex flex-col gap-8 justify-items-center bg-light-blue-100">
                 <h4 className="text-3xl font-anton text-light-blue-500">And that Tofu and Blue, is how I met your mother...</h4>
                 <div className="text-l text-light-blue-500 flex flex-col gap-3">
-                    <p>It all began on a chilly Halloween night in 2019 at a party on O Street just outside Georgetown. The floor was sticky, the fridge was stocked with Natty Lites, and the air buzzed with that unmistakable energy of Halloweekend.</p>
-                    <p>Joe almost skipped the party but threw on a last-minute Tony Stark costume and showed up. Meanwhile, Sasha made the 45-minute trek from UMD, excited for a night out and a date she had planned later at a bar—completely unaware of the persistent Iron Man impersonator about to enter her life.</p>
-                    <p>At the party, Joe spotted a group of girls struggling to take a selfie. One of them immediately caught his eye, so he offered to take the photo. Later, he learned she was his friend Seray’s best friend from middle school. When he casually mentioned his interest, Seray asked, “Which one?” He replied, “The tall one.” She grinned. “I’ll see what I can do.” </p>
-                    <p>Sasha, meanwhile, wasn’t exactly swooning over Tony Stark, but she noticed Joe kept finding ways to talk to her. As the group moved to a bar, they spent more time together, laughing and sharing stories. But then, her date arrived. She told Joe she’d be right back. Within minutes of sitting down with her date, she realized she’d much rather be with Joe.  </p>
-                    <p>When Joe saw Sasha with another guy, panic set in. He rushed to Seray, convinced he had blown his shot. Just as he was spiraling, Sasha returned, asking for help ditching her date. (Joe may or may not remember the guy as “a total loser”, but that’s up for debate.) A quick escape plan was executed, and Joe’s hopes were restored. </p>
-                    <p>From that moment on, Sasha saw Joe differently -- her sweet and now quite cute savior. They spent the rest of the night talking, dancing, and laughing about the chaos of the day.</p>
-                    <p>By the end of the night, they shared a slice of pizza, exchanged numbers, and said goodnight... for now. While it’d be easy to say the rest is history, every great rom-com needs a little drama—but that’s a story for another time.  </p>
-                    <p>Who would’ve thought that one Halloween night would lead to five years of love, two dogs, their first apartment in NYC, and a lifetime of memories?</p>
-                    <p>And if there’s one thing to take away from this story—it’s a huge thank you to Seray.  </p>
+                    <div className="our-story-section">
+                        <p>It all began on a chilly Halloween night in 2019 at a party on O Street just outside Georgetown. The floor was sticky, the fridge was stocked with Natty Lites, and the air buzzed with that unmistakable energy of Halloweekend. Joe almost skipped the party but threw on a last-minute Tony Stark costume and showed up. Meanwhile, Sasha made the 45-minute trek from UMD, excited for a night out and a date she had planned later at a bar—completely unaware of the persistent Iron Man impersonator about to enter her life. At the party, Joe spotted a group of girls struggling to take a selfie. One of them immediately caught his eye, so he offered to take the photo. Later, he learned she was his friend Seray’s best friend from middle school.</p>
+                        <img src={formalImg} className="our-story-img"></img>
+                    </div>
+                    <div className="our-story-section">
+                        <img src={italyImg} className="our-story-img"></img>
+                        <p>When he casually mentioned his interest, Seray asked, “Which one?” He replied, “The tall one.” She grinned. “I’ll see what I can do.” Sasha, meanwhile, wasn’t exactly swooning over Tony Stark, but she noticed Joe kept finding ways to talk to her. As the group moved to a bar, they spent more time together, laughing and sharing stories. But then, her date arrived. She told Joe she’d be right back. Within minutes of sitting down with her date, she realized she’d much rather be with Joe. When Joe saw Sasha with another guy, panic set in. He rushed to Seray, convinced he had blown his shot. Just as he was spiraling, Sasha returned, asking for help ditching her date. (Joe may or may not remember the guy as “a total loser”, but that’s up for debate.)</p>
+                    </div>
+                    <div className="our-story-section">
+                        <p>A quick escape plan was executed, and Joe’s hopes were restored. From that moment on, Sasha saw Joe differently -- her sweet and now quite cute savior. They spent the rest of the night talking, dancing, and laughing about the chaos of the day. By the end of the night, they shared a slice of pizza, exchanged numbers, and said goodnight... for now. While it’d be easy to say the rest is history, every great rom-com needs a little drama—but that’s a story for another time. Who would’ve thought that one Halloween night would lead to five years of love, two dogs, their first apartment in NYC, and a lifetime of memories? And if there’s one thing to take away from this story—it’s a huge thank you to Seray.</p>
+                        <img src={familyImg} className="our-story-img"></img>
+                    </div>
                 </div>
             </div>
             <div className="flip-cards-container flex flex-col gap-12">
