@@ -31,7 +31,7 @@ const Home = () => {
             <div className="homepage-section-2">
                     <div className="gif-text-header flex flex-col">
                         <h4 className="text-6xl text-light-blue-500 font-anton">Don't BLOW it!</h4>
-                        <span className=" gif-text-subheader text-light-blue-500 text-xl"><NavLink to="/rsvp" onClick={addRSVPForm} className="underline">RSVP</NavLink> today for a celebration you will never forget! </span>
+                        <span className="gif-text-subheader text-light-blue-500 text-xl"><NavLink to="/rsvp" onClick={addRSVPForm} className="underline">RSVP</NavLink> today for a celebration you will never forget! </span>
                     </div>
                     <img src={gif} alt="lance stephenson blowing in Lebron's ear" className="homepage-gif"></img>
             </div>

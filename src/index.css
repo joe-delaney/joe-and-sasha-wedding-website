@@ -127,7 +127,7 @@ path {
 }
 
 .homepage-gif {
-  width: 25%;
+  width: 30%;
   border-radius: 4px;
 }
 
@@ -395,4 +395,10 @@ path {
 .registry-text {
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .homepage-gif {
+    width: 50%;
+  }
 }
