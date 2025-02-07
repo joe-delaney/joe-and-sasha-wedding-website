@@ -338,6 +338,7 @@ path {
 .registry-text {
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .our-story-section {
@@ -350,6 +351,18 @@ path {
 .our-story-img {
   max-width: 25%;
   border-radius: 30px;
+}
+
+.food-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media (max-width: 767px) {

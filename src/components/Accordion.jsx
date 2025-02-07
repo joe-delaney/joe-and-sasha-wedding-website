@@ -31,7 +31,7 @@ const Accordion = ({ title, description }) => {
           height: isOpen ? `${contentHeight + 20}px` : '0px',
         }}
     >
-        {<p>{description}</p>}
+        {<p dangerouslySetInnerHTML={{ __html: description }}></p>}
     </div>
     </div>
   );
