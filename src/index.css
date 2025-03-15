@@ -366,6 +366,13 @@ path {
   gap: 10px;
 }
 
+.faq-link {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 @media (max-width: 767px) {
   .homepage-gif {
     width: 60%;

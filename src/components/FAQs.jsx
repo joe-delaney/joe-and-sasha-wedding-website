@@ -6,7 +6,7 @@ const FAQs = () => {
     const faqs = [
         {
             question: "What is the dress code for the wedding?",
-            answer: "<b>Black Tie Optional / Indian Formal:</b> Think elegant and dazzling! Tuxes, gowns, or your finest indian outfits are preferred, but a sharp suit or a chic cocktail dress will do just fine. Dress to impress, but most importantly, dress to dance and have fun!"
+            answer: "<b>Black Tie Optional / Indian Formal:</b> Think elegant and dazzling! Tuxes, gowns, or your finest indian outfits are preferred, but a sharp suit or a chic cocktail dress will do just fine. Dress to impress, but most importantly, dress to dance and have fun! <br/><br/>We have put together this pinterest board to give some inspiration for our dress code: <a href='https://www.pinterest.com/josephdelaney5/sasha-and-joe-wedding-dress-code/' target='_blank' class='faq-link'>Wedding Dress Code Pinterest Board</a>"
         },
         {
             question: "What date should I RSVP by?",
@@ -34,7 +34,7 @@ const FAQs = () => {
         },
         {
             question: "What type of food will be served at your wedding?",
-            answer: "<div class='menu-faq-container'><div>We’re excited to share a delicious, fully vegetarian meal with you! Cocktail hour will feature tasty hors d'oeuvres, followed by a sit-down dinner with a fresh salad, your choice of entrée (selected when you RSVP), and a sweet dessert. Whether you’re vegetarian or not, we promise a meal that will leave you happy and satisfied!</div><div class='food-options'><b class='underline'>Entree Choices:</b><span><b>Tofu’s Tikka</b> – A flavorful Indian fusion dish served with basmati rice. Note: this may not be 100% traditional but is still delicious!</span><span><b>Porcini Mushroom Ravioli</b> – Paired with asparagus for a rich, comforting bite</span><span><b>Sesame Soba Noodles with Fried Tofu</b> – A noodle dish with bold flavors and a bit of heat</span></div></div>"
+            answer: "<div class='menu-faq-container'><div>We’re excited to share a delicious, fully vegetarian meal with you! Cocktail hour will feature tasty hors d'oeuvres, followed by a sit-down dinner with a fresh salad, your choice of entrée (selected when you RSVP), and a sweet dessert. Whether you’re vegetarian or not, we promise a meal that will leave you happy and satisfied! (If you want to learn more about any of these entrees, don't hesitate to reach out. We have tried each one and have pictures as well)</div><div class='food-options'><b class='underline'>Entree Choices:</b><span><b>Tofu’s Tikka</b> – A flavorful Indian fusion dish served with basmati rice. Note: this may not be 100% traditional but is still delicious!</span><span><b>Porcini Mushroom Ravioli</b> – Paired with asparagus for a rich, comforting bite</span><span><b>Sesame Soba Noodles with Fried Tofu</b> – A noodle dish with bold flavors and a bit of heat</span></div></div>"
         },
         {
             question: "Will there be meal options for guests with dietary restrictions or allergies?",
