@@ -18,7 +18,7 @@ const FAQs = () => {
         },
         {
             question: "Is there a group hotel block? Where should we stay if we are coming out of town?",
-            answer: "We didn’t secure a hotel block, as the venue is centrally located in DC. But don’t worry—there are plenty of great hotels nearby! You can find a list of options in the Travel section of this website to help with your stay."
+            answer: "We didn’t secure a hotel block, as the venue is centrally located in DC. But don’t worry—there are plenty of great hotels nearby! You can find a list of options in the Travel section of this website to help with your stay. We will be staying at the Grand Hyatt Washington!"
         },
         {
             question: "Will the wedding be indoors or outdoors?",

@@ -22,7 +22,7 @@ const Travel = () => {
                     <div className="flex travel-items">
                         <div className="flex flex-col gap-3 travel-item">
                             <span className="font-anton text-xl">Grand Hyatt Washington</span>
-                            <p>This hotel is about a 5 minute walk and a 1-2 minute drive from the venue.</p>
+                            <p>This hotel is about a 5 minute walk and a 1-2 minute drive from the venue. This is the hotel that we are staying at!</p>
                             <a href="https://www.hyatt.com/grand-hyatt/en-US/wasgh-grand-hyatt-washington" target="_blank" rel="noreferrer" className="flex-center border w-32 h-8 rounded-lg bg-light-blue-500 text-white">Website</a>
                         </div>
                         <div className="flex flex-col gap-3 travel-item">
