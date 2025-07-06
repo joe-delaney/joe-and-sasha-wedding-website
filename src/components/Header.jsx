@@ -7,28 +7,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [count, setCount] = useState(0);
 
-  const removeRSVPForm = () => {
-    const form = document.getElementById("widget-oursvp")
-    if(form) form.classList.add("hidden")
-  }
-
-  const addRSVPForm = () => {
-    const form = document.getElementById("widget-oursvp")
-    if(form) form.classList.remove("hidden")
-  }
-
   const toggleMenu = () => {
-    if(!isMenuOpen) {
-      removeRSVPForm()
-    }
     setIsMenuOpen(!isMenuOpen);
   };
 
   const closeMenu = (flag) => {
     setIsMenuOpen(false);
-    if(flag === "RSVP") {
-      addRSVPForm()
-    }
   };
 
   const location = useLocation();
@@ -39,9 +23,6 @@ const Header = () => {
     if (count < 25) {
       intervalId = setInterval(() => {
         setCount((prevCount) => prevCount + 1);
-        if (location.pathname !== '/rsvp') {
-          removeRSVPForm()
-        }
       }, 25);
     }
 
@@ -63,7 +44,6 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-100 font-semibold text-l ${isActive ? 'underline' : ''}`
               }
-              onClick={removeRSVPForm}
             >
               Home
             </NavLink>
@@ -72,7 +52,6 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-100 font-semibold text-l ${isActive ? 'underline' : ''}`
               }
-              onClick={removeRSVPForm}
             >
               Schedule
             </NavLink>
@@ -81,7 +60,6 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-100 font-semibold text-l ${isActive ? 'underline' : ''}`
               }
-              onClick={removeRSVPForm}
             >
               Our Story
             </NavLink>
@@ -90,7 +68,6 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-100 font-semibold text-l ${isActive ? 'underline' : ''}`
               }
-              onClick={removeRSVPForm}
             >
               FAQs
             </NavLink>
@@ -99,7 +76,6 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-100 font-semibold text-l ${isActive ? 'underline' : ''}`
               }
-              onClick={removeRSVPForm}
             >
               Travel
             </NavLink>
@@ -108,7 +84,6 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-100 font-semibold text-l ${isActive ? 'underline' : ''}`
               }
-              onClick={removeRSVPForm}
             >
               Registry
             </NavLink>
@@ -117,7 +92,6 @@ const Header = () => {
               className={({ isActive }) => 
                 `text-light-blue-100 font-semibold text-l ${isActive ? 'underline' : ''}`
               }
-              onClick={addRSVPForm}
             >
               RSVP
             </NavLink>

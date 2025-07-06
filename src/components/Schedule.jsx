@@ -41,6 +41,16 @@ const Schedule = () => {
                         <span>**yes...you are expected to rally**</span>
                     </div>
                 </div>
+                <div className="flex-col flex-center gap-10 bg-light-blue-500 text-light-blue-100 rounded-3xl p-4">
+                    <h1 className="text-4xl font-anton squiggly-underline">Brunch the Next Day</h1>
+                    <div className="flex flex-col gap-6">
+                        <div>
+                            <h4 className="font-bold text-lg">Private Terrace and Event Space</h4>
+                            <h4>1100 13th St NW, Suite 800, Washington, DC, 20005</h4>
+                            <h4>10:30 AM - 1:30 PM</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

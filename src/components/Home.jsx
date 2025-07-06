@@ -5,11 +5,6 @@ import WavyMarquette from './WavyMarquette'
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
-    const addRSVPForm = () => {
-        const form = document.getElementById("widget-oursvp")
-        if(form) form.classList.remove("hidden")
-    }
-
     return (
         <div className="homepage bg-light-blue-500">
             <WavyMarquette text="WE ARE GETTING MARRIED!!"></WavyMarquette>
@@ -20,7 +15,7 @@ const Home = () => {
                         <h2 className="text-4xl font-semibold text-light-blue-100">July 25th, 2025</h2>
                         <h2 className="text-4xl font-semibold text-light-blue-100">Washington, D.C.</h2>
                     </div>
-                    <NavLink to="/rsvp" onClick={addRSVPForm}>
+                    <NavLink to="/rsvp">
                         <button className="homepage-btn text-2xl font-semibold text-light-blue-100 flex">Click to RSVP</button>
                     </NavLink>
                 </div>
@@ -31,7 +26,7 @@ const Home = () => {
             <div className="homepage-section-2">
                     <div className="gif-text-header flex flex-col">
                         <h4 className="text-6xl text-light-blue-500 font-anton">Don't BLOW it!</h4>
-                        <span className="gif-text-subheader text-light-blue-500 text-xl"><NavLink to="/rsvp" onClick={addRSVPForm} className="underline">RSVP</NavLink> today for a celebration you will never forget! </span>
+                        <span className="gif-text-subheader text-light-blue-500 text-xl"><NavLink to="/rsvp" className="underline">RSVP</NavLink> today for a celebration you will never forget! </span>
                     </div>
                     <img src={gif} alt="lance stephenson blowing in Lebron's ear" className="homepage-gif"></img>
             </div>
